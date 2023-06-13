@@ -1,5 +1,7 @@
 # live_test_6
 
+![My App](myapp.png?raw=true)
+
 A new Flutter project.
 
 ## Getting Started

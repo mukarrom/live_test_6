@@ -32,7 +32,11 @@ class MyHomePage extends StatelessWidget {
         title: const Text("My Shopping List"),
         centerTitle: true,
         actions: [
-          IconButton(onPressed: () {}, icon: const Icon(Icons.shopping_cart))
+          IconButton(
+              onPressed: () {
+                mySnackBar('Your shopping cart is empty', context);
+              },
+              icon: const Icon(Icons.shopping_cart))
         ],
       ),
       body: const MyLiveTest6(),
@@ -50,22 +54,88 @@ class MyLiveTest6 extends StatelessWidget {
         ListTile(
           leading: Icon(Icons.apple),
           title: Text('Apples'),
+          subtitle: Text(
+            'lorem ipsum omit',
+            style: TextStyle(
+              color: Color.fromRGBO(117, 117, 117, 1),
+            ),
+          ),
+          trailing: Icon(
+            Icons.arrow_forward,
+            color: Colors.blue,
+          ),
+        ),
+        Divider(
+          height: 0,
+          thickness: 1,
         ),
         ListTile(
           leading: Icon(Icons.book),
           title: Text('Dairy'),
+          subtitle: Text(
+            'lorem ipsum omit',
+            style: TextStyle(
+              color: Color.fromRGBO(117, 117, 117, 1),
+            ),
+          ),
+          trailing: Icon(
+            Icons.arrow_forward,
+            color: Colors.blue,
+          ),
+        ),
+        Divider(
+          height: 0,
+          thickness: 1,
         ),
         ListTile(
           leading: Icon(Icons.sports_football),
           title: Text('Basketball'),
+          subtitle: Text(
+            'lorem ipsum omit',
+            style: TextStyle(
+              color: Color.fromRGBO(117, 117, 117, 1),
+            ),
+          ),
+          trailing: Icon(
+            Icons.arrow_forward,
+            color: Colors.blue,
+          ),
+        ),
+        Divider(
+          height: 0,
+          thickness: 1,
         ),
         ListTile(
           leading: Icon(Icons.alarm),
           title: Text('Alarm Clock'),
+          subtitle: Text(
+            'lorem ipsum omit',
+            style: TextStyle(
+              color: Color.fromRGBO(117, 117, 117, 1),
+            ),
+          ),
+          trailing: Icon(
+            Icons.arrow_forward,
+            color: Colors.blue,
+          ),
+        ),
+        Divider(
+          height: 0,
+          thickness: 1,
         ),
         ListTile(
           leading: Icon(Icons.laptop),
           title: Text('Laptop'),
+          subtitle: Text(
+            'lorem ipsum omit',
+            style: TextStyle(
+              color: Color.fromRGBO(117, 117, 117, 1),
+            ),
+          ),
+          trailing: Icon(
+            Icons.arrow_forward,
+            color: Colors.blue,
+          ),
         ),
       ],
     );
